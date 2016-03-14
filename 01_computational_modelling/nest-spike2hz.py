@@ -80,7 +80,7 @@ class spike2hz:
                                              side='right')
 
             statement = ("{}\t{}\n".format(
-                (current_time + self.dt)/1000.,
+                (current_time + 1000)/1000.,
                 (len(self.spikes[self.left:self.right, 0])/self.num_neurons)))
 
             self.output_file.write(statement)
